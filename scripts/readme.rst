@@ -1,0 +1,1 @@
+In this folder you can place your scripts for automating some processes - deployment, project startup etc.
