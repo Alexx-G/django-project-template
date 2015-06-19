@@ -14,6 +14,7 @@ from config.settings.secrets import *  # flake:8 noq
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SITE_ROOT = os.path.dirname(BASE_DIR)
+SITE_NAME = "{{ project_name }}"
 
 
 # Quick-start development settings - unsuitable for production
@@ -80,3 +81,35 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(SITE_ROOT, 'static'),
     )
+
+
+# Logging configuration
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s | %(asctime)s | %(name)s:%(funcName)s | %(process)d | %(thread)d | %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s | %(message)s'
+        },
+        'normal': {
+            'format': '%(levelname)s | %(asctime)s | %(name)s:%(funcName)s | %(message)s'
+        }
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'normal'
+        }
+    },
+    'loggers': {
+        '{{ project_name }}': {
+            'level': 'DEBUG',
+            'handlers': ['console']
+        }
+    }
+}
