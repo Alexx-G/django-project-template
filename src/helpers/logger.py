@@ -8,5 +8,5 @@ except ImportError as e:
 
 def get_logger(logger_name, autoprefix=True):
     if autoprefix and settings and hasattr(settings, 'SITE_NAME'):
-        logger_name = "{0}.{1}".format(settings.LOGGING_ROOT, logger_name)
+        logger_name = "{0}.{1}".format(settings.SITE_NAME, logger_name)
     return logging.getLogger(logger_name)
