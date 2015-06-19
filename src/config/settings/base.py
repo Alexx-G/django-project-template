@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/stable/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from config.settings.secrets import *  # flake:8 noq
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SITE_ROOT = os.path.dirname(BASE_DIR)
 
