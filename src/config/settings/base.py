@@ -2,7 +2,7 @@
 Django settings for project_name project.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.7/topics/settings/
+https://docs.djangoproject.com/en/stable/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/stable/ref/settings/
@@ -84,7 +84,7 @@ STATICFILES_DIRS = (
 
 
 # Logging configuration
-
+# https://docs.djangoproject.com/en/stable/topics/logging/
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
