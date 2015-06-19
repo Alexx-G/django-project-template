@@ -6,6 +6,7 @@ SECRET_KEY = ''
 
 DATABASES = {
     'default': {
+        # Replace with database backend which you'll use
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': '',
         'HOST': '127.0.0.1',
