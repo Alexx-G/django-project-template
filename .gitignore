@@ -18,7 +18,7 @@ bower_components/
 
 # Project specific files
 *.log
-*_secrets.json
+secrets.py
 
 # Editor/IDE specific files
 *.sublime-*
