@@ -68,3 +68,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/stable/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+
+TEMPLATE_DIRS = (
+    os.path.join(SITE_ROOT, 'templates'),
+    )
+
+STATICFILES_DIRS = (
+    os.path.join(SITE_ROOT, 'static'),
+    )
