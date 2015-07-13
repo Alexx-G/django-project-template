@@ -4,7 +4,7 @@ You can use this bash script for one-command initialization of the project
 
 ::
 
-    curl -L https://gist.githubusercontent.com/Alexx-G/4dafed44959756f45469/raw/394c2bda3d396b1b7d66d62aee2cb35ddc788bc8/django-startproject.sh | bash
+    curl -L https://gist.githubusercontent.com/Alexx-G/4dafed44959756f45469/raw/43e36c3f3a88b4aa2586b05ef73228de2736f076/django-startproject.sh | bash
 
 or follow next steps:
 
